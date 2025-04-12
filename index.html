@@ -26,37 +26,40 @@
     }
 
     header img {
-      width: 140px;
-      height: 140px;
+      width: 120px;
+      height: 120px;
       object-fit: cover;
       border-radius: 50%;
-      border: 5px solid white;
+      border: 4px solid white;
       margin-bottom: 15px;
     }
 
     header h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
 
     header p {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     nav {
       background: #003980;
       padding: 1rem;
       text-align: center;
+      flex-wrap: wrap;
     }
 
     nav a {
+      display: inline-block;
+      margin: 6px 10px;
       color: white;
       text-decoration: none;
-      margin: 0 1rem;
       font-weight: bold;
+      font-size: 0.95rem;
     }
 
     section {
-      padding: 40px 20px;
+      padding: 30px 15px;
       max-width: 1000px;
       margin: auto;
     }
@@ -64,56 +67,48 @@
     h2 {
       color: #004aad;
       margin-bottom: 20px;
+      font-size: 1.4rem;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
     }
 
     .card {
       background: white;
       border-radius: 10px;
-      padding: 20px;
+      padding: 15px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
     }
 
     .video-button {
       background-color: #004aad;
       color: white;
-      padding: 15px 25px;
-      border-radius: 10px;
+      padding: 12px 20px;
+      border-radius: 8px;
       display: inline-block;
       margin-top: 10px;
       text-decoration: none;
+      font-size: 1rem;
     }
 
     .video-button:hover {
       background-color: #00306e;
     }
 
-    .article-list a {
-      display: block;
-      margin-bottom: 12px;
-      color: #004aad;
-      text-decoration: none;
-      font-weight: 500;
+    .article-list h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 1rem;
     }
 
-    .article-list a:hover {
-      text-decoration: underline;
-      color: #00306e;
-    }
-
-    .article-preview a {
-      color: #004aad;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .article-preview a:hover {
-      text-decoration: underline;
+    .article-list embed {
+      width: 100%;
+      height: 400px;
+      border: none;
     }
 
     footer {
@@ -125,9 +120,50 @@
     }
 
     .social-icons a {
-      margin: 0 10px;
+      margin: 0 8px;
       color: white;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
+    }
+
+    section#contact a {
+      color: #004aad;
+      text-decoration: none;
+    }
+
+    section#contact a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      nav {
+        padding: 0.7rem;
+      }
+
+      nav a {
+        margin: 6px 5px;
+        font-size: 0.9rem;
+      }
+
+      .video-button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .article-list embed {
+        height: 300px;
+      }
     }
   </style>
 </head>
@@ -183,21 +219,20 @@
   <section id="articles">
     <h2>Articles & Publications</h2>
     <div class="article-list">
-        <h3>📝 Tussle of Civilization</h3>
-        <embed src="articles/tussle of civilisation (1) (1).pdf" width="600" height="400" type="application/pdf">
+      <h3>📝 Tussle of Civilization</h3>
+      <embed src="articles/tussle of civilisation (1) (1).pdf" type="application/pdf">
 
-        <h3>📝 Dilli ka Dil</h3>
-        <embed src="articles/upsc ek prem katha.pdf" width="600" height="400" type="application/pdf">
+      <h3>📝 Dilli ka Dil</h3>
+      <embed src="articles/upsc ek prem katha.pdf" type="application/pdf">
 
-        <h3>📝 UPSC Ek Prem Katha</h3>
-        <embed src="articles/upsc ek prem katha.pdf" width="600" height="400" type="application/pdf">
+      <h3>📝 UPSC Ek Prem Katha</h3>
+      <embed src="articles/upsc ek prem katha.pdf" type="application/pdf">
     </div>
-</section>
-
+  </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p><i class="fas fa-envelope"></i> rohanrawat061@gmail.com</p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:rohanrawat061@gmail.com">rohanrawat061@gmail.com</a></p>
     <p><i class="fas fa-phone"></i> +91 9687521073</p>
     <p><i class="fab fa-x-twitter"></i> <a href="https://x.com/rohanrawat061" target="_blank">Rohan Rawat</a></p>
   </section>
