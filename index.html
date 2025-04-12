@@ -79,6 +79,43 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
+    .video-button {
+      background-color: #004aad;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    .video-button:hover {
+      background-color: #00306e;
+    }
+
+    .article-list a {
+      display: block;
+      margin-bottom: 12px;
+      color: #004aad;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .article-list a:hover {
+      text-decoration: underline;
+      color: #00306e;
+    }
+
+    .article-preview a {
+      color: #004aad;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .article-preview a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       background: #004aad;
       color: white;
@@ -98,13 +135,15 @@
   <header>
     <img src="photo.png" alt="Rohan Rawat" />
     <h1>Rohan Rawat</h1>
-    <p>  Anchor | Writer | Educator | Media Enthusiast</p>
+    <p>Anchor | Writer | Educator | Media Enthusiast</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#video">Video</a>
+    <a href="#articles">Articles</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -134,17 +173,40 @@
     </ul>
   </section>
 
-  <section id="contact">
+  <section id="video">
+    <h2>Anchoring Demo Video</h2>
+    <a href="https://www.canva.com/design/DAGbgbJ0eL0/rdiHjQRsnqI9bnFnHmBV9A/watch" class="video-button" target="_blank">
+      🎬 Watch Video on Canva
+    </a>
+  </section>
+
+  <section id="articles">
+    <h2>Articles & Publications</h2>
+    <div class="article-list">
+      <a href="https://www.newstak.in/entertainment/photo/ranveer-instead-of-shahrukh-shooting-of-don-3-stuck-for-15-years-fans-are-furious-know-the-real-reason-3170591-2025-04-11" target="_blank">📸 Don 3 & Ranveer Singh (Published on NewsTak)</a>
+      <a href="articles/tussle-of-civilization.pdf" target="_blank">📝 Tussle of Civilization</a>
+      <a href="articles/dilli-ka-dil.pdf" target="_blank">📝 Dilli ka Dil</a>
+      <a href="articles/upsc-ek-prem-katha.pdf" target="_blank">📝 UPSC Ek Prem Katha</a>
+    </div>
+
+    <div class="article-preview">
+      <strong>Tussle of Civilization</strong>
+      <p>This article discusses the ideological and cultural clashes rooted in Aryan and Dravidian identity.</p>
+      <a href="articles/tussle-of-civilization.pdf" target="_blank">📄 Read Full Article (PDF)</a>
+    </div>
+  </section>
+
+  <section id="contact">S
     <h2>Contact</h2>
     <p><i class="fas fa-envelope"></i> rohanrawat061@gmail.com</p>
     <p><i class="fas fa-phone"></i> +91 9687521073</p>
-    <p><i class="fab fa-x-twitter"></i> <a href="https://x.com/@rohanrawat061" target="_blank">Rohan Rawat</a></p>
+    <p><i class="fab fa-x-twitter"></i> <a href="https://x.com/rohanrawat061" target="_blank">Rohan Rawat</a></p>
   </section>
 
   <footer>
     <p>Connect with me:</p>
     <div class="social-icons">
-      <!-- <a href="https://x.com/@rohanrawat061" target="_blank"><i class="fab fa-x-twitter"></i></a> -->
+      <a href="https://x.com/rohanrawat061" target="_blank"><i class="fab fa-x-twitter"></i></a>
       <a href="mailto:rohanrawat061@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
     <p>&copy; 2025 Rohan Rawat. All rights reserved.</p>
